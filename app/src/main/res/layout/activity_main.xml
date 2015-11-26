@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+   <EditText
+       android:id="@+id/edAvaliador"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:singleLine="true"
+       android:hint="Nome Avaliador"
+       />
+
+    <EditText
+        android:id="@+id/edTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:hint="Título do Trabalho"
+        />
+    <EditText
+        android:id="@+id/edNota"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:hint="Nota"
+        />
+    <EditText
+        android:id="@+id/edComentario"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:hint="comentário"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        >
+
+    <Button
+        android:id="@+id/btAvaliar"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Avaliar"
+        android:onClick="onClickAvaliar"/>
+
+    <Button
+        android:id="@+id/btAvaliações"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Avaliações"
+        android:onClick="onClickAvaliações"/>
+    </LinearLayout>
+</LinearLayout>
